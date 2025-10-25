@@ -29,7 +29,7 @@ public class FilterRecipes {
             while (fileScanner.hasNextLine()) {
                 String row = fileScanner.nextLine();
                 
-                if (row.isBlank()) {
+                if (row.isEmpty()) {
                     countRow = 0;
                     recipes.add(recipe);
                     recipe = new Recipe();
